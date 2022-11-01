@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- {{alliymun}} -->
+
+    <form method="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        
+        <p>
+        
+        
+            <input type="submit" value="Отправить отзыв">
+        
+        
+        </p>
+        
+        
+        </form>
+        
+        
+        
+        
+            <hr>
+            <div class="LS-P">
+        
+                
+                
+                <h2>
+                    Как взломать пентагон подробная инструкция
+                </h2>
+        
+                <h4>
+                    кто попал в мою базу данных паролей и почт
+                </h4>
+                {%for x in Flask%}
+                <h1>{{x}}</h1>
+                {%endfor%}
+        
+                {%for l in peremennaya%}
+                <p>Оставил отзыв: {{l.name}}</p>
+                <p>Его email: {{l.email}}</p>
+                <p>отзыв: {{l.review}}</p>
+                <p>Оценка: {{l.rating}}</p>
+                <hr>
+                {%endfor%}
+                <hr>
+            </div>
+</body>
+
+
+
+
+</html>
